@@ -65,8 +65,8 @@ export default function Home() {
     <main className="font-light text-dark bg-light">
       {/* Header */}
       <Image
+        loading="lazy"
         className="w-[90px] mt-10 mx-5 sm:mt-11 sm:mx-20 md:mx-24 xl:mx-32 lg:w-[120px]"
-        priority
         src={Logo}
         alt="Tngo Logo icon"
       />
@@ -92,20 +92,20 @@ export default function Home() {
         {/* Tngo Device */}
         <div className="flex flex-col items-center relative">
           <Image
+            loading="lazy"
             className="w-[300px] sm:w-[400px] md:w-[450px] lg:w-[600px] xl:w-[700px]"
-            priority
             src={Tngo}
             alt="Tngo Logo icon"
           />
           <Image
+            loading="lazy"
             className="w-[25px] relative -top-7 -right-6 lg:w-[40px]"
-            priority
             src={Linea}
             alt="Line"
           />
           <Image
+            loading="lazy"
             className="w-[50px] relative -top-4 -right-6 lg:w-[70px]"
-            priority
             src={LineaText}
             alt="Tngo Text"
           />
@@ -127,8 +127,8 @@ export default function Home() {
 
         <div className="w-[270px] md:w-[360px] lg:w-[420px] bg-green-dark relative rounded my-5 order-1">
           <Image
+            loading="lazy"
             className="w-[270px] md:w-[360px] lg:w-[420px] rounded relative top-3 left-3 md:top-4 md:left-4 lg:top-6 lg:left-6"
-            priority
             src={CerroPatacon}
             alt="Tngo Logo icon"
           />
@@ -148,8 +148,8 @@ export default function Home() {
           {icons.map((icon, idx) => (
             <div className="flex flex-col items-center" key={idx}>
               <Image
+                loading="lazy"
                 className="h-[55px] mb-3 sm:h-[75px] lg:h-[90px]"
-                priority
                 src={icon.svg}
                 alt="Lata icon"
               />
@@ -174,8 +174,8 @@ export default function Home() {
         </div>
 
         <Image
+          loading="lazy"
           className="w-[250px] h-[250px] md:w-[300px] md:h-[300px]  lg:w-[350px] lg:h-[350px] my-2 object-cover rounded-full object-left-bottom"
-          priority
           src={TrashCircle}
           alt="Tngo Logo icon"
         />
@@ -189,8 +189,8 @@ export default function Home() {
         </header>
 
         <div className="w-full h-fit relative">
-          {/* Imagen */}
           <Image
+            loading="lazy"
             className="w-full h-full absolute top-0 -z-10 object-cover"
             src={Botellas}
             alt="Botellas recicladas"
@@ -242,8 +242,8 @@ export default function Home() {
               }
             >
               <Image
+                loading="lazy"
                 className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px] object-cover rounded-full mb-5"
-                priority
                 src={client.img}
                 alt="cliente contento"
               />
@@ -259,8 +259,8 @@ export default function Home() {
       {/* Footer */}
       <section className="mt-20 w-full bg-green-dark sm:flex">
         <Image
+          loading="lazy"
           className="w-[300px] lg:w-1/2 hidden object-cover sm:block"
-          priority
           src={Planta}
           alt="Tngo Logo icon"
         />
@@ -293,16 +293,19 @@ export default function Home() {
             </p>
             <div className="flex gap-2 lg:gap-6">
               <Image
+                loading="lazy"
                 className="h-[20px] lg:h-[35px]"
                 src={Instagram}
                 alt="Instagram Logo"
               />
               <Image
+                loading="lazy"
                 className="h-[20px] lg:h-[35px]"
                 src={Youtube}
                 alt="Youtube Logo"
               />
               <Image
+                loading="lazy"
                 className="h-[20px] lg:h-[35px]"
                 src={Facebook}
                 alt="Facebook Logo"
